@@ -1,6 +1,16 @@
 class Command
+	attr_reader :description
+	
+	def initialize(description)
+		@description = description
+	end
+
 	def execute
 		42
+	end
+
+	def description
+		@description
 	end
 end
 
